@@ -4,7 +4,7 @@ model-viewer {
     width: auto; 
     max-width: 1200px;
     height: 700px;
-    background-color: #ffffff;
+    background-color: $background;
   }
   
   .Hotspot {
@@ -43,13 +43,13 @@ model-viewer {
   }
   
   .HotspotAnnotation{
-    background: #fff;
+    background: $Hotspot-bg;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     color: rgba(0, 0, 0, 0.8);
     display: block;
-    font-family: Futura, Helvetica Neue, sans-serif;
     font-size: 12px;
+    font-family: $Hotspot-font;
     font-weight: 700;
     left: calc(100% + 1em);
     max-width: 135px;

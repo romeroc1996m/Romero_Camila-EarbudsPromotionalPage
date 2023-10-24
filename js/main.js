@@ -5,21 +5,20 @@
   const hotspots = document.querySelectorAll(".Hotspot");
 
   const infoBoxes = [ {
-      title: "Noise-cancelling microphones",
-      text: "Noise-cancelling microphones and a rear copper shield are optimally placed to quickly detect outside noises, working together to counter noise before it disturbs your experience."
-    },
-    {
-      title: "Comfortable fit",
-      text: "Three pairs of ultra comfortable silicone tips are included. The tips create an acoustic seal that blocks outside audio and secures the earbuds in place."
-    },
-    {
-      title:"360 AUDIO",
-      text: "360 Audio places sound all around you, while Dolby Head Tracking™ technology delivers an incredible three-dimensional listening experience."
+      title: "Noise cancelling microphones",
+      text: "Even in the busiest setting, our unique earbud shape allows for acoustic perception of sound and 360-degree noise-canceling microphones.",
+      images: "images/noiseCancelling.jpg"
     },
     {
       title:"Ultra Fast Charging",
-      text: "Charge your earbuds in 30 minutes or less with our hyper charging technology."
-    }
+      text: "The most recent chrome ultra charging technology on the market will fully charge your earbuds in 30 minutes or less.",
+      images: "images/circuits.jpg"
+    },
+    {
+      title:"Wide High Quality audio",
+      text: "Our partnership with one of the most significant speakers, Bose™, adopts a more balanced approach and produces a sound profile that is generalist high-fidelity.",
+      images: "images/speaker.jpg"
+    },
   ]
 
   //functions
@@ -39,12 +38,15 @@
 
       const titleE = document.createElement("h2");
       const textE = document.createElement("p");
+      const imageE = document.createElement("img");
       
       titleE.textContent = infoBox.title;
       textE.textContent = infoBox.text;
+      imageE.src = infoBox.image;
 
       selected.appendChild(titleE);
       selected.appendChild(textE);
+      selected.appendChild(imageE);
 
       // document.createElement('h2');
         //textContent = infoBox.title
