@@ -37,14 +37,14 @@
       let selected = document.querySelector(`#hotspot-${index+1}`);
       // console.log(selected);
 
-      const title = document.createElement("h2");
-      const text = document.createElement("p");
+      const titleE = document.createElement("h2");
+      const textE = document.createElement("p");
       
-      title.textContent = infoBox.title;
-      text.textContent = infoBox.text;
+      titleE.textContent = infoBox.title;
+      textE.textContent = infoBox.text;
 
-      selected.appendChild(title);
-      selected.appendChild(text);
+      selected.appendChild(titleE);
+      selected.appendChild(textE);
 
       // document.createElement('h2');
         //textContent = infoBox.title
