@@ -4,11 +4,9 @@
   const model = document.querySelector("#model");
   const hotspots = document.querySelectorAll(".Hotspot");
 
-  const infoBoxes = [
-    {
+  const infoBoxes = [ {
       title: "Noise-cancelling microphones",
-      text: "Noise-cancelling microphones and a rear copper shield are optimally placed to quickly detect outside noises, working together to counter noise before it disturbs your experience.",
-      images: "images/pathyourimage.jpg"
+      text: "Noise-cancelling microphones and a rear copper shield are optimally placed to quickly detect outside noises, working together to counter noise before it disturbs your experience."
     },
     {
       title: "Comfortable fit",
@@ -37,7 +35,17 @@
     infoBoxes.forEach((infoBox, index) => {
 
       let selected = document.querySelector(`#hotspot-${index+1}`);
-      console.log(selected);
+      // console.log(selected);
+
+      const titleE = document.createElement("h2");
+      const textE = document.createElement("p");
+      
+      titleE.textContent = infoBox.title;
+      textE.textContent = infoBox.text;
+
+      selected.appendChild(titleE);
+      selected.appendChild(textE);
+
       // document.createElement('h2');
         //textContent = infoBox.title
 
