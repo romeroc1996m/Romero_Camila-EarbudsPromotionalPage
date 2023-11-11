@@ -1,16 +1,14 @@
+@use '../abstracts/variables' as b;
 
 model-viewer {
-    width: 1200px;
-    height: 1000px;
-    background-color: #ffffff;
+
+    width: auto; 
+    max-width: 1200px;
+    height: 700px;
+    background-color: $background;
+
   }
   
-  model-viewer {
-    width: 100%;
-    height: 90%;
-    background-color: #ffffff;
-  }
-
   .Hotspot {
     background: #fff;
     border-radius: 32px;
@@ -47,16 +45,16 @@ model-viewer {
   }
   
   .HotspotAnnotation{
-    background: #fff;
+    background: $Hotspot-bg;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     color: rgba(0, 0, 0, 0.8);
     display: block;
-    font-family: Futura, Helvetica Neue, sans-serif;
-    font-size: 18px;
+    font-size: 12px;
+    font-family: $Hotspot-font;
     font-weight: 700;
     left: calc(100% + 1em);
-    max-width: 128px;
+    max-width: 210px;
     overflow-wrap: break-word;
     padding: 0.5em 1em;
     position: absolute;
@@ -104,9 +102,10 @@ model-viewer {
   //   float: left;
   //   transition: width 0.3s;
   // }
+
   
   #ar-button {
-    background-image: url(ar_icon.png);
+    background-image: url(../images/ar_icon.png);
     background-repeat: no-repeat;
     background-size: 20px 20px;
     background-position: 12px 50%;

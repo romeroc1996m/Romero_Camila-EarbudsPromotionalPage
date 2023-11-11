@@ -1,4 +1,4 @@
-:not(:defined) > * {
+/* :not(:defined) > * {
   display: none;
 }
 
@@ -88,7 +88,7 @@ model-viewer {
   transition: width 0.3s;
 } */
 
-#ar-button {
+/* #ar-button {
   background-image: url(ar_icon.png);
   background-repeat: no-repeat;
   background-size: 20px 20px;
@@ -145,4 +145,4 @@ model-viewer[ar-status="session-started"] > #ar-prompt {
 
 model-viewer > #ar-prompt > img {
   animation: circle 4s linear infinite;
-}
+} */ 

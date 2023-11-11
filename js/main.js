@@ -30,7 +30,7 @@
   }
 
   function loadInfo () {
-    
+
     infoBoxes.forEach((infoBox, index) => {
 
       let selected = document.querySelector(`#hotspot-${index+1}`);
