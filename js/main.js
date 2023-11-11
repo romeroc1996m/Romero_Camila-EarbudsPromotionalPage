@@ -42,7 +42,7 @@
       
       titleE.textContent = infoBox.title;
       textE.textContent = infoBox.text;
-      imageE.src = infoBox.image;
+      imageE.src = infoBox.images;
 
       selected.appendChild(titleE);
       selected.appendChild(textE);
