@@ -48,6 +48,10 @@
       selected.appendChild(textE);
       selected.appendChild(imageE);
 
+      titleE.classList.add("hotspot.title");
+      textE.classList.add("hotspot.text");
+      imageE.classList.add("hotspot.image");
+
       // document.createElement('h2');
         //textContent = infoBox.title
 
